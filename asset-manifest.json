@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/test-vuexy/static/css/main.d5c3a268.css",
-    "main.js": "/test-vuexy/static/js/main.58163db5.js",
+    "main.js": "/test-vuexy/static/js/main.7785b22d.js",
     "static/js/787.af954410.chunk.js": "/test-vuexy/static/js/787.af954410.chunk.js",
     "index.html": "/test-vuexy/index.html",
     "main.d5c3a268.css.map": "/test-vuexy/static/css/main.d5c3a268.css.map",
-    "main.58163db5.js.map": "/test-vuexy/static/js/main.58163db5.js.map",
+    "main.7785b22d.js.map": "/test-vuexy/static/js/main.7785b22d.js.map",
     "787.af954410.chunk.js.map": "/test-vuexy/static/js/787.af954410.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5c3a268.css",
-    "static/js/main.58163db5.js"
+    "static/js/main.7785b22d.js"
   ]
 }
