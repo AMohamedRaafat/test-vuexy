@@ -1,29 +1,24 @@
 import React, { useRef } from "react";
 import "./Product.css";
-import Data from "./data.json";
+import Products from "./data.json";
 const Product = ({ products, fill }) => {
   const isVal = useRef();
-  const handleChange = () => {
-    console.log(isVal.current.value);
-    filterBySearch();
-  };
   const filterBySearch = () => {
+    console.log(products);
     if (isVal.current.value) {
-      return fill((prevState) => {
-        return prevState.filter((el) =>
-          el.name.toLowerCase().includes(isVal.current.value)
-        );
-      });
+      return fill(
+        products.filter((el) => el.name.includes(isVal.current.value))
+      );
     } else if ((isVal.current.value = "")) {
-      fill(Data.products);
+      fill(Products.products);
     } else {
-      fill(Data.products);
+      fill(Products.products);
     }
   };
   const renderProducts = products?.slice(0, 9).map((product) => {
     return (
       <div className="card" id={product.id} key={product.id}>
-        <div className="card-img">
+        <div className="card-img">  
           <img src={product.img} alt="" />
         </div>
         <div className="rate-price">
@@ -97,7 +92,7 @@ const Product = ({ products, fill }) => {
         <input
           type="search"
           placeholder="Search Product.."
-          onChange={handleChange}
+          onChange={filterBySearch}
           ref={isVal}
         />
         <svg
