@@ -1,0 +1,201 @@
+.sidebar {
+  padding: 0.1rem 0.5rem 0.3rem 0.5rem;
+  height: auto;
+  width: 260px;
+  box-shadow: 2px 2px 5px #ccc;
+  overflow-x: hidden;
+  color: #7367f0;
+  transition: left 1s;
+  background-color: #fff;
+  @media (min-width: 500px) and (max-width: 1100px) {
+    position: fixed;
+    left: -261px;
+    z-index: 111111 !important;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        vertical-align: middle;
+        width: 36px;
+        max-width: 36px;
+      }
+      h2 {
+        display: inline-block;
+        font-size: 1.3rem;
+        font-family: "Montserrat", Helvetica, Arial, serif;
+        font-weight: 600;
+      }
+    }
+    p.barlarge {
+      all: unset;
+      border: 2px solid #7367f0;
+      width: 16.67px;
+      height: 16.67px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      @media (min-width: 500px) and(max-width: 1100px) {
+        display: none;
+      }
+    }
+    p.small {
+      cursor: pointer;
+      display: none;
+      svg {
+        cursor: pointer;
+      }
+      @media (min-width: 500px) and(max-width: 1100px) {
+        display: block;
+        cursor: pointer;
+      }
+      span {
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: inherit;
+        border-width: 1.5px;
+        padding: 2px;
+      }
+    }
+  }
+  .list-group {
+    ul {
+      padding-left: 0px;
+      text-align: left;
+      list-style-type: none;
+    }
+    li {
+      line-height: 100%;
+      width: 100%;
+      height: -webkit-fill-available;
+      padding: 1px 0 0 1px;
+
+      border-radius: 5px;
+      cursor: pointer;
+      transition: margin 0.5s;
+      &:hover ~ .dropdown-menu {
+        display: block;
+        height: auto;
+        padding: 0;
+      }
+      .dropdown-menu {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+      .item-content {
+        text-decoration: none !important;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        transition: margin 0.5s;
+        padding: 10px;
+        &:hover {
+          margin-left: 10px;
+        }
+        &.active {
+          box-shadow: 1px 1px 10px #7367f0;
+
+          border-radius: 5px;
+          background: linear-gradient(
+            118deg,
+            #7367f0,
+            rgba(115, 103, 240, 0.7)
+          );
+          svg.big {
+            color: #fff;
+          }
+          svg.small {
+            color: #fff !important;
+          }
+          .title {
+            color: #fff;
+          }
+          i {
+            color: #fff;
+          }
+        }
+
+        svg.big {
+          margin: {
+            left: 0.5rem;
+            right: 1.3rem;
+          }
+          width: 20px;
+          height: 20px;
+          color: #565360;
+        }
+        svg.small {
+          margin: {
+            left: 0.5rem;
+            right: 1.3rem;
+          }
+          width: 15px;
+          height: 15px;
+          color: #565360;
+        }
+
+        .title {
+          display: inline-block;
+          width: 66%;
+          vertical-align: baseline;
+          font-size: 1rem;
+          color: #807a95;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .childs {
+          display: inline-block;
+          padding: 5px;
+          box-sizing: content-box;
+          width: 15px;
+          height: 15px !important;
+          background-color: rgba(255, 159, 67, 0.12);
+          vertical-align: middle;
+          text-align: center;
+          border-radius: 50%;
+          color: #ff9f43 !important;
+          font-size: 13px;
+        }
+        .card {
+          color: #28c76f !important;
+          font-weight: 600;
+          background-color: rgba(40, 199, 111, 0.12);
+          width: fit-content;
+        }
+        .chev {
+          color: #565360;
+          font-size: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .type {
+      cursor: default;
+      padding: 4.5%;
+      .item-content {
+        span {
+          color: #9e9da3;
+          font-weight: bold;
+          font-size: 12px;
+        }
+        &:hover {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

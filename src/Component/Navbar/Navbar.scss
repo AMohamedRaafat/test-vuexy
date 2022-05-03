@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  flex-basis: 100%;
+  margin-left: 291px;
+  height: 68px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  background-color: #fff;
+  width: 80%;
+  position: fixed;
+  top: 10px;
+  z-index: 11;
+  @media (min-width: 500px) and (max-width: 1100px) {
+    margin: {
+      left: 1%;
+      right: 1%;
+    }
+    width: 100% - 2%;
+  }
+}

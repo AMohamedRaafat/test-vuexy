@@ -1,0 +1,32 @@
+.search-bar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  svg {
+    margin: {
+      left: 0.5rem;
+      right: 0.5rem;
+    }
+    width: 20px;
+    height: 20px;
+    color: #565360;
+  }
+  input {
+    width: 95%;
+    border: 2px solid transparent;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    &::placeholder {
+      color: #999;
+      font-weight: 500;
+    }
+    &:focus {
+      text-indent: 5px;
+      border: 2px solid transparent;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.products-content {
+  display: flex;
+  flex-direction: column;
+  margin: {
+    left: 2%;
+  }
+  width: 100%;
+  .search {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 0.5em;
+    input[type="search"] {
+      all: unset;
+      width: 95%;
+      text-align: left;
+      padding: 1em 1em;
+      &::placeholder {
+        font-weight: 400;
+        color: #ccc;
+      }
+    }
+    svg {
+      color: #999;
+    }
+  }
+  .cards {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 1035px;
+    overflow-y: scroll;
+    align-items: flex-start;
+    box-shadow: 3px 3px 4px #f1eeee;
+
+    flex-wrap: wrap;
+    @media (min-width: 500px) and (max-width: 1100px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    .card {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      width: 30%;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-top: 14px;
+      margin-bottom: 10px;
+      transition: margin 0.5s;
+      &.w-100 {
+        width: 100% !important;
+      }
+      @media (min-width: 500px) and (max-width: 1100px) {
+        width: 100%;
+      }
+      &:hover {
+        box-shadow: 0.5px 0.5px 10px #f1eeee, -0.5px -0.5px 10px #f1eeee;
+        margin-top: 10px;
+      }
+      .card-img {
+        padding: 2%;
+
+        img {
+          margin-left: -10px;
+          text-align: center;
+          width: 300px;
+        }
+      }
+      .rate-price {
+        padding: 2%;
+        font-weight: 500;
+        color: #999;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        div {
+          width: 50%;
+          &.price {
+            text-align: right;
+          }
+        }
+      }
+      .card-details {
+        margin-top: -10px;
+        padding: 2%;
+        .card-title {
+          font-weight: 500;
+          font-size: 15px;
+          color: #333;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-height: 20px;
+          margin: {
+            top: 5px;
+            bottom: 5px;
+          }
+        }
+        .card-desc {
+          overflow: hidden;
+          font-weight: 400;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          width: 100%;
+          margin : {
+            top: 5px;
+            bottom: 5px;
+          }
+          color: #999;
+          height: 20px;
+        }
+      }
+      .fav-buy {
+        display: flex;
+        width: 100%;
+        button {
+          svg {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+          }
+          all: unset;
+          text-align: center;
+          padding: 10px;
+          background-color: #f6f6f6;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 14px;
+          flex-basis: 45%;
+          &.view {
+            flex-basis: 55%;
+            background-color: #7367f0;
+            color: #fff;
+            border-radius: 0 0 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

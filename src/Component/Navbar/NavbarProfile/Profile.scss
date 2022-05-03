@@ -1,0 +1,95 @@
+.navbarProfile {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  .nav-item-content {
+    display: flex;
+    text-decoration: none;
+    color: #565360;
+    align-items: center;
+    justify-content: center;
+    &.float-count {
+      position: relative;
+      > .count {
+        position: absolute;
+        top: -8px;
+        color: #fff;
+        right: 7px;
+        width: 18px;
+        padding: 1px;
+        border-radius: 50%;
+        background-color: #7367f0;
+        height: 19px;
+        font-size: 12px;
+      }
+      > .notfiy-count {
+        position: absolute;
+        top: -8px;
+        color: #fff;
+        right: 8px;
+        width: 18px;
+        padding: 1px;
+        border-radius: 50%;
+        background-color: #ea5455 !important;
+        height: 19px;
+        font-size: 12px;
+      }
+    }
+    img {
+      margin-right: 5px;
+    }
+    svg {
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+      width: 20px;
+      height: 20px;
+      color: #565360;
+    }
+    .Profilephoto {
+      margin : {
+        top: 2px;
+        right: 2px;
+      }
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    &.user {
+      .profile {
+        margin-right: 10px;
+        span {
+          font-weight: bold;
+          display: block;
+          text-align: right;
+          .role {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+          }
+        }
+
+        @media (min-width: 500px) and (max-width: 1100px) {
+          display: none;
+        }
+      }
+      .profile-img {
+        position: relative;
+        .online {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-color: #28c76f;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

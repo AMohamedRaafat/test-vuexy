@@ -1,0 +1,59 @@
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-bar svg {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  color: #565360;
+}
+
+.search-bar input {
+  width: 95%;
+  border: 2px solid transparent;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.search-bar input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.search-bar input:-ms-input-placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.search-bar input::-ms-input-placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.search-bar input:focus {
+  text-indent: 5px;
+  border: 2px solid transparent;
+  outline: none;
+}
+/*# sourceMappingURL=Bar.css.map */
