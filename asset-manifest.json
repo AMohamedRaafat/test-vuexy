@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3d174ea.css",
-    "main.js": "/static/js/main.9dce9ac2.js",
-    "static/js/787.af954410.chunk.js": "/static/js/787.af954410.chunk.js",
-    "index.html": "/index.html",
-    "main.d3d174ea.css.map": "/static/css/main.d3d174ea.css.map",
-    "main.9dce9ac2.js.map": "/static/js/main.9dce9ac2.js.map",
-    "787.af954410.chunk.js.map": "/static/js/787.af954410.chunk.js.map"
+    "main.css": "/test-vuexy/static/css/main.6c09e43b.css",
+    "main.js": "/test-vuexy/static/js/main.58b05d45.js",
+    "static/js/787.af954410.chunk.js": "/test-vuexy/static/js/787.af954410.chunk.js",
+    "index.html": "/test-vuexy/index.html",
+    "main.6c09e43b.css.map": "/test-vuexy/static/css/main.6c09e43b.css.map",
+    "main.58b05d45.js.map": "/test-vuexy/static/js/main.58b05d45.js.map",
+    "787.af954410.chunk.js.map": "/test-vuexy/static/js/787.af954410.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3d174ea.css",
-    "static/js/main.9dce9ac2.js"
+    "static/css/main.6c09e43b.css",
+    "static/js/main.58b05d45.js"
   ]
 }
